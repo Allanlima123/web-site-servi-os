@@ -1,0 +1,60 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    .cabecalho .fa-bars{
+        display: block;
+    }
+
+    .cabecalho .navbar{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: auto;
+        width: 100%;
+        z-index: 1000;
+        border-top: .1rem solid rgba(0,0,0,.3);
+        background: #fff;
+    }
+
+    .cabecalho .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .cabecalho .navbar ul li{
+        margin: 1rem 0;
+    }
+
+    .cabecalho .navbar ul li a{
+        color: #444;
+        font-size: 2.4rem;
+    }
+
+    .cabecalho .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .cabecalho .nav-toggle{
+        top: 5.8rem;
+    }
+
+    .home .banner{
+        font-size: 4rem;
+    }
+
+    .home .slogan{
+        font-size: 1.7rem;
+    }
+}
