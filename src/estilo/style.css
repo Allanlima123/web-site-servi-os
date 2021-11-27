@@ -244,3 +244,72 @@
     color: #999;
     font-size: 1.5rem;
 }
+
+.team{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: #222;
+}
+
+.team .heading{
+    color: #fff;
+}
+
+.team .heading::before,
+.team .heading::after{
+    border-color: #fff;
+}
+
+.team .container-team{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team .container-team .card{
+    width: 25rem;
+    height: 35rem;
+    background: #fff;
+    text-align: center;
+    margin:7rem 20px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-reflect:below .2rem linear-gradient(transparent 70%, #0004);
+}
+
+.team .container-team .card .imagem{
+    margin: 1rem 0;
+    padding-top: 4rem;
+}
+
+.team .container-team .card .imagem img{
+    border: .5rem solid #fff;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    box-shadow:  0 0 .5rem rgba(0,0,0,.3);
+    object-fit: cover;
+}
+
+.team .container-team .card .infor h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.team .container-team .card .infor span{
+    color: var(--color);
+    font-size: 1.8rem;
+}
+
+.team .container-team .card .infor .icons a i{
+    margin-top: 4rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.team .container-team .card .infor .icons a i:hover{
+    color: var(--color);
+}
