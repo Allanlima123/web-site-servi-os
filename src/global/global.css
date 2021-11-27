@@ -119,4 +119,20 @@ section{
     .about .box-container .imagem img{
         width: 100vw;
     }
+
+    .services .box-container{
+        flex-flow: column-reverse;
+    }
+
+    .services .box-container:nth-child(even){
+        flex-flow: column;
+    }
+
+    .services .box-container .imagem img{
+        width: 100vw;
+    }
+
+    .services .box-container .descricao{
+        padding: 0;
+    }
 }
