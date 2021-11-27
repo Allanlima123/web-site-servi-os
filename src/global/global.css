@@ -7,6 +7,59 @@ body{
     overflow-x: hidden;
 }
 
+section{
+    padding: 2rem 5%;
+}
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--color);
+    position: relative;
+}
+
+.heading::before,
+.heading::after{
+    content: "";
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: .4rem solid var(--color);
+    border-left: .4rem solid var(--color);
+    letter-spacing: .2rem;
+}
+
+.heading::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+
+.heading::after{
+    transform: rotate(180deg);
+    bottom: -.5rem;
+    right: -2rem;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+.btn:hover{
+    letter-spacing: 1.5px;
+    opacity: .9;
+}
+
 @media(max-width:768px){
     html{
         font-size: 50%;
@@ -56,5 +109,14 @@ body{
 
     .home .slogan{
         font-size: 1.7rem;
+    }
+
+    .about .box-container{
+        flex-flow: column-reverse;
+        padding: 0 2rem;
+    }
+
+    .about .box-container .imagem img{
+        width: 100vw;
     }
 }

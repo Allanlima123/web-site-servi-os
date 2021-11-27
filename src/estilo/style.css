@@ -47,24 +47,6 @@
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home{
     min-height: 100vh;
     width: 100vw;
@@ -115,7 +97,7 @@
     bottom: -.5rem;
     left: 0;
     height: 11rem;
-    background-image: url(../imagens/);
+    background-image: url(../imagens/wave.svg);
     background-size: 100rem 11rem;
     background-repeat: no-repeat;
     animation:waves 10s linear infinite;
@@ -166,4 +148,64 @@
     100%{
         transform: rotate(360deg);
     }
+}
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .box-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0 4rem;
+}
+
+.about .box-container .descricao{
+    text-align: left;
+    max-width: 49rem;
+}
+
+.about .box-container .descricao h3{
+    font-size: 3rem;
+    color: var(--color);
+}
+
+.about .box-container .descricao p{
+    font-size: 1.5rem;
+    color: #999;
+    margin: 1.5rem 0;
+}
+
+.about .box-container .imagem img{
+    width: 50vw;
+}
+
+.about::before,
+.about::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: .5;
+    border-radius: 50%;
+}
+
+.about::before{
+    height: 50rem;
+    width: 50rem;
+    background: #ccc;
+    bottom: -10rem;
+    left: -10rem;
+}
+
+.about::after{
+    height: 60rem;
+    width: 60rem;
+    background: var(--color);
+    top: -10rem;
+    right: -10rem;
 }
