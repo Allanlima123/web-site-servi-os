@@ -409,6 +409,93 @@
     opacity: .8;
 }
 
+.faQ{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.faQ .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.faQ .row .imagem img{
+    height: 70vh;
+    width: 50vw;
+}
+
+.faQ .row .acorderon-conatiner{
+    width: 50%;
+    text-align: left;
+}
+
+.faQ .row .acorderon-conatiner .accordion .accordion-header{
+    background: var(--color);
+    margin: 1rem 0;
+    box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+.faQ .row .acorderon-conatiner .accordion .accordion-header span{
+    display: inline-block;
+    font-size: 2rem;
+    background: #fff;
+    width: 5rem;
+    height: 4rem;
+    color: #333;
+    text-align: center;
+    line-height: 4rem;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%,75% 100%,0% 100%);
+}
+
+.faQ .row .acorderon-conatiner .accordion .accordion-header h3{
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    padding-left: .5rem;
+    font-size: 2rem;
+}
+
+.faQ .row .acorderon-conatiner .accordion .accordion-body{
+    padding: 1rem;
+    color: #444;
+    box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
+    font-size: 1.3rem;
+    display: none;
+}
+
+.faQ .row .acorderon-conatiner .accordion:nth-child(1) .accordion-body{
+    display: block;
+}
+
+.robape{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background: var(--color);
+}
+
+.robape .creditos h3{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.robape .redes-sociais a{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+
 
 
 

@@ -1,6 +1,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body{
@@ -148,10 +149,39 @@ section{
         width: 100%;
         padding: 0 1.5rem;
     }
+
+    .faQ{
+        padding: 0;
+    }
+
+    .faQ .row{
+        flex-flow: column;
+        padding: 0 1rem;
+    }
+
+    .faQ .row .imagem img{
+        width: 100vw;
+    }
+
+    .faQ .row .acorderon-conatiner{
+        width: 100%;
+    }
 }
 
 @media(max-width:425px){
     .team .container-team .card{
         width: 100%;
+    }
+
+    .robape{
+        flex-flow: column;
+    }
+
+    .robape .creditos h3{
+        text-align: center;
+    }
+
+    .robape .redes-sociais a{
+        padding: 1rem 0;
     }
 }
