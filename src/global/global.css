@@ -135,4 +135,23 @@ section{
     .services .box-container .descricao{
         padding: 0;
     }
+
+    .contact .box-contact{
+        flex-flow: column;
+    }
+
+    .contact .box-contact .imagem img{
+        width: 100vw;
+    }
+
+    .contact .box-contact .form-container{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+
+@media(max-width:425px){
+    .team .container-team .card{
+        width: 100%;
+    }
 }
